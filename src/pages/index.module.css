@@ -1,0 +1,72 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  border-radius: 20%;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.download-btn svg {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.new-app {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.new-app a {
+  color: white;
+  text-decoration: underline;
+}
