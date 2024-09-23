@@ -119,7 +119,7 @@ const config: Config = {
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cherry Studio, Inc.`
+      copyright: `Copyright © ${new Date().getFullYear()} Cherry Studio, Inc. <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2021031071号-3</a>`
     },
     prism: {
       theme: prismThemes.github,
