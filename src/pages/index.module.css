@@ -3,6 +3,16 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to top, #53b672, #fbdaf2);
+}
+
+.title {
+  color: #333;
+}
+
+.subtitle {
+  color: #111;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 996px) {
@@ -13,7 +23,7 @@
     font-size: 32px;
   }
   .subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
   .logo {
     width: 120px;
@@ -26,7 +36,9 @@
   height: 150px;
   margin-bottom: 20px;
   border-radius: 10%;
-  border-radius: 20%;
+  border-radius: 22%;
+  user-select: none;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .download-buttons {

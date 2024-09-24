@@ -24,7 +24,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <a href="https://github.com/kangfenmao/cherry-studio" target="_blank">
-          <img src="/img/installer.png" alt="Cherry Studio AI Logo" className={styles.logo} />
+          <img src="/img/logo.png" alt="Cherry Studio AI Logo" className={styles.logo} />
         </a>
         <Heading as="h1" className={clsx('hero__title', styles.title)}>
           {siteConfig.title}
