@@ -11,7 +11,7 @@ import styles from './index.module.css'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
-  const [version, setVersion] = useState('0.6.12')
+  const [version, setVersion] = useState('0.7.8')
 
   useEffect(() => {
     const url = 'https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest'
@@ -65,7 +65,7 @@ function HomepageHeader() {
             下载 Windows 版本
           </a>
           <a
-            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}.AppImage`}
+            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x86_64.AppImage`}
             className={styles['download-btn']}>
             <LinuxLogo style={{ width: 24, height: 24 }} />
             下载 Linux 版本
