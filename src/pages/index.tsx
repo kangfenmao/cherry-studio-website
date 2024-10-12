@@ -11,7 +11,7 @@ import styles from './index.module.css'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
-  const [version, setVersion] = useState('0.7.8')
+  const [version, setVersion] = useState('0.7.16')
 
   useEffect(() => {
     const url = 'https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest'
