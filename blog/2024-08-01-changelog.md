@@ -4,12 +4,101 @@ title: Cherry Studio 发布日志
 authors:
   name: kangfenmao
   title: Cherry Studio
-  url: https://github.com/kangfenmao/cherry-studio
+  url: https://github.com/cherrywe/cherry-studio
   image_url: https://github.com/kangfenmao.png
 tags: [hello]
 ---
 
 # 更新日志
+
+### v0.8.15 - 2024-11-19
+
+话题搜索修改为弹窗模式
+设置界面样式调整
+增加 APP 数据目录显示
+增加代码折叠功能
+修复编辑消息后没有保存的问题
+修复一些视觉模型不能识别问题
+修复一些特殊的数据会导致 APP 启动后崩溃问题
+修复备份文件在某些情况下无法恢复问题
+
+### v0.8.13 - 2024-11-12
+
+1. 增加最小化到托盘功能 @injurka
+2. 托盘图标使用彩色图标
+3. 修复 Mermaid png 格式图表无法下载问题
+4. 选择模型弹窗支持固定一些常用模型
+5. 默认助手合并到模型设置里
+6. 设置面板移除模型相关设置项
+7. 修复一些视觉模型不能识别问题
+
+### v0.8.12 - 2024-11-11
+
+修复 Windows 窗口最小化后进入任务栏问题
+增加 API 密钥批量检查功能
+
+### v0.8.11 - 2024-11-10
+
+#### 新功能：
+
+- 支持代码风格切换 @injurka
+- 增加任务栏图标
+- 智能体新增精选分类
+- 支持 Mermaid 图表预览和下载
+- 增加多 API 密钥支持
+- 侧边栏增加提示信息
+
+#### 错误修复：
+
+- 修复 Mermaid 图表无法显示问题
+- 修复气泡模式代码颜色问题
+
+### v0.8.10 - 2024-11-07
+
+#### 新功能：
+
+- 增加 Mistral, Hyperbolic, Grok 服务商 @1355873789
+- 增加 DuckDuckGo 小程序，无需登录即可使用 GPT-4o-mini 模型
+
+#### 错误修复：
+
+- 修复上下文菜单多语言显示问题 @injurka
+- 修复默认模型设置不生效问题 @injurka
+- 修复全局快捷键注册失败报错
+- 修复导出图片背景颜色错误
+- 修复 Github Models 和 Groq 图片无法识别问题
+- 修复气泡模式代码颜色问题
+- 修复删除最后一组预设消息组后无法保存问题
+- 修复拼写错误 @SHLE1
+
+### v0.8.9 - 2024-11-02
+
+支持聊天气泡样式和简洁样式切换
+支持导出对话为 Word 文档
+错误修复
+
+### v0.8.8 - 2024-11-01
+
+全新的对话气泡界面 by @teojs
+将主题切换按钮移到左下角菜单栏中 by @teojs
+智能体界面使用更加紧凑布局
+会话面板默认移动到左侧
+
+![image](https://github.com/user-attachments/assets/3adfdd76-6b79-42ca-991e-197a0ccd4a01)
+![image](https://github.com/user-attachments/assets/4fb4320a-5a8c-4ef3-be6e-c17065983f8a)
+
+### v0.8.7 - 2024-10-31
+
+修复绘图界面新建按钮被遮挡问题（Windows）
+修复绘图列表无法滚动问题
+修复全局快捷键被占用问题
+
+### v0.8.6 - 2024-10-31
+
+全新的智能体界面 by @cawabj
+新增绘图模块
+文件管理界面优化
+修复可以同时启动多个应用问题
 
 ### v0.8.5 - 2024-10-29
 
@@ -513,4 +602,4 @@ Windows 用户如果遇到更新问题，请手动下载新版本安装
 
 神器集：https://hao.logosc.cn/  
 官网：https://cherry-ai.com
-Github: https://github.com/kangfenmao/cherry-studio
+Github: https://github.com/cherrywe/cherry-studio

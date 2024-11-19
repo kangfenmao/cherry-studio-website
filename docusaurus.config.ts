@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'kangfenmao', // Usually your GitHub org/user name.
+  organizationName: 'cherrywe', // Usually your GitHub org/user name.
   projectName: 'cherry-studio', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -70,7 +70,7 @@ const config: Config = {
         },
         { to: '/blog', label: '博客', position: 'left' },
         {
-          href: 'https://github.com/kangfenmao/cherry-studio',
+          href: 'https://github.com/cherrywe/cherry-studio',
           label: 'GitHub',
           position: 'right'
         }
@@ -114,7 +114,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/kangfenmao/cherry-studio'
+              href: 'https://github.com/cherrywe/cherry-studio'
             }
           ]
         }

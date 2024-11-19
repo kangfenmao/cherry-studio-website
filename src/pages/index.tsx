@@ -11,7 +11,7 @@ import styles from './index.module.css'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
-  const [version, setVersion] = useState('0.8.5')
+  const [version, setVersion] = useState('0.8.15')
 
   useEffect(() => {
     const url = 'https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest'
@@ -23,7 +23,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <a href="https://github.com/kangfenmao/cherry-studio" target="_blank">
+        <a href="https://github.com/cherrywe/cherry-studio" target="_blank">
           <img src="/img/logo.png" alt="Cherry Studio AI Logo" className={styles.logo} />
         </a>
         <Heading as="h1" className={clsx('hero__title', styles.title)}>
@@ -32,7 +32,7 @@ function HomepageHeader() {
         <p className={clsx('hero__subtitle', styles.subtitle)}>{siteConfig.tagline}</p>
         <div className={styles['download-buttons']}>
           <a
-            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x64.dmg`}
+            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x64.dmg`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 384 512" width="24" height="24">
               <path
@@ -43,7 +43,7 @@ function HomepageHeader() {
             macOS Intel
           </a>
           <a
-            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-arm64.dmg`}
+            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-arm64.dmg`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 384 512" width="24" height="24">
               <path
@@ -54,7 +54,7 @@ function HomepageHeader() {
             macOS Apple Silicon
           </a>
           <a
-            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-setup.exe`}
+            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-setup.exe`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 448 512" width="24" height="24">
               <path
@@ -65,7 +65,7 @@ function HomepageHeader() {
             下载 Windows 版本
           </a>
           <a
-            href={`https://github.com/kangfenmao/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x86_64.AppImage`}
+            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x86_64.AppImage`}
             className={styles['download-btn']}>
             <LinuxLogo style={{ width: 24, height: 24 }} />
             下载 Linux 版本
@@ -73,11 +73,11 @@ function HomepageHeader() {
         </div>
         <p className={styles['new-app']}>
           🎉{' '}
-          <a href="https://github.com/kangfenmao/cherry-studio" target="_blank">
+          <a href="https://github.com/cherrywe/cherry-studio" target="_blank">
             Cherry Studio
           </a>{' '}
           最新版本{' '}
-          <a href={`https://github.com/kangfenmao/cherry-studio/releases/tag/v${version}`} target="_blank" v-cloak>
+          <a href={`https://github.com/cherrywe/cherry-studio/releases/tag/v${version}`} target="_blank" v-cloak>
             v{version}
           </a>{' '}
           发布啦！

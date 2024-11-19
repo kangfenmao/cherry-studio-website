@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ### 简单问题
 
-你可以通过 Github Issue 提出问题，我会快速进行处理：https://github.com/kangfenmao/cherry-studio/issues
+你可以通过 Github Issue 提出问题，我会快速进行处理：https://github.com/cherrywe/cherry-studio/issues
 
 ### 商务合作
 
