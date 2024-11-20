@@ -8,16 +8,18 @@ import React, { useState, useEffect } from 'react'
 import LinuxLogo from '@site/static/img/linux-logo.svg'
 
 import styles from './index.module.css'
+import axios from 'axios'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
   const [version, setVersion] = useState('0.8.15')
 
   useEffect(() => {
-    const url = 'https://api.github.com/repos/kangfenmao/cherry-studio/releases/latest'
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setVersion(data.tag_name.replace('v', '')))
+    const fetchVersion = async () => {
+      const { data } = await axios.get('https://cherry.ocool.online')
+      setVersion(data?.version?.replace('v', ''))
+    }
+    fetchVersion()
   }, [])
 
   return (
@@ -32,7 +34,7 @@ function HomepageHeader() {
         <p className={clsx('hero__subtitle', styles.subtitle)}>{siteConfig.tagline}</p>
         <div className={styles['download-buttons']}>
           <a
-            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x64.dmg`}
+            href={`https://cherrystudio.ocool.online/Cherry-Studio-${version}-x64.dmg`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 384 512" width="24" height="24">
               <path
@@ -43,7 +45,7 @@ function HomepageHeader() {
             macOS Intel
           </a>
           <a
-            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-arm64.dmg`}
+            href={`https://cherrystudio.ocool.online/Cherry-Studio-${version}-arm64.dmg`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 384 512" width="24" height="24">
               <path
@@ -54,7 +56,7 @@ function HomepageHeader() {
             macOS Apple Silicon
           </a>
           <a
-            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-setup.exe`}
+            href={`https://cherrystudio.ocool.online/Cherry-Studio-${version}-setup.exe`}
             className={styles['download-btn']}>
             <svg viewBox="0 0 448 512" width="24" height="24">
               <path
@@ -65,7 +67,7 @@ function HomepageHeader() {
             下载 Windows 版本
           </a>
           <a
-            href={`https://github.com/cherrywe/cherry-studio/releases/download/v${version}/Cherry-Studio-${version}-x86_64.AppImage`}
+            href={`https://cherrystudio.ocool.online/Cherry-Studio-${version}-x86_64.AppImage`}
             className={styles['download-btn']}>
             <LinuxLogo style={{ width: 24, height: 24 }} />
             下载 Linux 版本
