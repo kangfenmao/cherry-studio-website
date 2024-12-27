@@ -60,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 260px;
 }
 
 .download-btn:hover {
